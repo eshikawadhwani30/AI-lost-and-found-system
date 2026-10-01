@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
+    host: true, // Listen on all network interfaces (allows mobile phone Wi-Fi connection)
     // Proxy API requests to backend during local development
     // This allows calling fetch('/api/health') or axios.get('/api/health') directly
     proxy: {

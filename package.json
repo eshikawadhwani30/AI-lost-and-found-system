@@ -4,7 +4,7 @@
   "description": "Production-grade AI-Based Lost & Found Management System built on MERN Stack with Google Gemini",
   "scripts": {
     "start": "node server/server.js",
-    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "build": "npm install --prefix server --include=dev && npm install --prefix client --include=dev && npm run build --prefix client",
     "server": "npm run dev --prefix server",
     "client": "npm run dev --prefix client",
     "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run server\" \"npm run client\"",
