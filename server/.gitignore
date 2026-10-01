@@ -1,0 +1,6 @@
+# Ignore node modules and logs
+node_modules/
+*.log
+.env
+uploads/*
+!uploads/.gitkeep
